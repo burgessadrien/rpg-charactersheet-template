@@ -1,0 +1,89 @@
+.card {
+    @include BoxShadow(8);
+    background-color: $secondary;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    margin: 1em;
+    padding: 1em;
+
+    * {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    p {
+        word-wrap: break-word;
+    }
+}
+
+.card-map {
+    width: 100%;
+
+    .card-map__container, .card-map__container div {
+        height: 500px;
+        position: relative;
+        width: 100%;
+    }
+}
+
+.card-email {
+    width: 100%;
+
+    div {
+        padding-bottom: 1em;
+    }
+
+    .input {
+        align-items: center;
+        display: flex;
+
+        input {
+            margin-left: 1em;
+            width: 20em;
+        }
+    }
+    
+    .body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        textarea {
+            max-height: 40em;
+            min-height: 20em;
+            overflow: auto;
+            resize: vertical;
+            width: 100%;
+        }
+    }
+
+    .send {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        button {
+            padding: 0.5em 2em;
+
+            &:enabled {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.card-list {
+    max-width: 100%;
+
+    div.container {
+        display: flex;
+        flex-direction: row;
+        height: 10em;
+        max-width: 100%;
+    }
+}

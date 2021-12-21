@@ -1,0 +1,40 @@
+body {
+    background:  $primary;
+    color: $text;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.border {
+    border: 1px solid $outline;
+}
+
+.round-corners {
+    border-radius: 10px;
+}
+
+.flex-spacer {
+    flex: 1;
+}
+
+.max-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.quarter-width {
+    width: 25%;
+}

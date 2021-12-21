@@ -1,0 +1,13 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+
+    li {
+        float: left;
+        padding-right: 2em;
+    }
+}

@@ -1,0 +1,27 @@
+.nav-toggle {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 1em;
+}
+
+.nav-toggle:hover {
+    @include BoxShadow(8);
+    background-color: $highlight;
+}
+
+.nav-toggle {
+    font-size: 1.25em;
+}
+
+@media (max-width: 767px) {
+    .nav-toggle {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-toggle {
+        display: none;
+    }
+}

@@ -1,0 +1,28 @@
+.section {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.section__empty {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+    button {
+        margin: 5px;
+    }
+}
+
+.section__vertical {
+    align-items: flex-start;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.section__horizontal {
+    align-items: flex-start;
+    flex-flow: row wrap;
+    justify-content: center;
+}

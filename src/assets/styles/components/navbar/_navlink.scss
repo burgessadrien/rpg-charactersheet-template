@@ -1,0 +1,21 @@
+.nav-link {
+    
+    a {
+        box-sizing: border-box;
+        color: $text;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        font-weight: bold;
+        padding: 10px;
+        text-decoration: none;
+    }
+}
+
+.nav-link:hover {
+    @include BoxShadow(8);
+
+    a {
+        background-color: $highlight;
+    }
+}

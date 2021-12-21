@@ -1,0 +1,34 @@
+.nav-wrapper {
+    @include BoxShadow(8);
+    align-items: center;
+    background-color: $secondary;
+    display: flex;
+    flex: 0;
+    flex-direction: row;
+    height: 3em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.nav-list {
+    flex-direction: row;
+    height: 100%;
+    justify-content: left;
+    list-style: none;
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    .nav-list {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-list {
+        display: flex;
+    }
+}
